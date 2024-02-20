@@ -1,39 +1,104 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+.col-span-3 {
+  grid-column: span 3 / span 3;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.justify-around {
+  justify-content: space-around;
+}
+.mx-6 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+.items-center {
+  align-items: center;
+}
+.btn {
+  color: white;
+  background-color: rgb(59 130 246);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.btn-nav {
+  color: white;
+  background-color: rgb(59 130 246);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.btn:hover {
+  background-color: rgb(39, 115, 236);
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-1 {
+  gap: 0.5rem;
+}
+.custom-select {
+  padding: 0.5em;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.custom-select:focus {
+  outline: none;
+  border-color: #666;
 }
+.navbar {
+  border-radius: 0.25rem;
+}
+.grow {
+  flex-grow: 1;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.sidebar {
+  color: black;
+  border-radius: 0.25rem;
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  background-color: rgb(248 250 252);
+}
+.flex-col {
+  flex-direction: column;
+}
+.sidebar-btn {
+  background-color: rgb(248 250 252);
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.sidebar-btn:hover {
+  background-color: rgb(246, 247, 248);
+}
+.main-ad {
+  background-color: rgb(175, 212, 245);
+  border-radius: 0.25rem;
+}
+.items-start {
+  align-items: flex-start;
 }
